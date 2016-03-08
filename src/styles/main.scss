@@ -1,0 +1,74 @@
+@import "variables";
+html {
+  font-size: 14px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    font-family: $f-stack;
+    color: $f-color;
+    background:
+            linear-gradient(
+                            rgba(0, 0, 0, 0.6),
+                            rgba(0, 0, 0, 0.6)
+            ),
+            $bg-image no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .main-div {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(400%);
+    transform: translateY(400%);
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+  body {
+    font-family: $f-stack;
+    color: $f-color;
+    background:
+            linear-gradient(
+                            rgba(0, 0, 0, 0.6),
+                            rgba(0, 0, 0, 0.6)
+            ),
+            $bg-image-mobile no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .main-div {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(350%);
+    transform: translateY(350%);
+  }
+}
+
+body {
+  font-family: $f-stack;
+  color: $f-color;
+  background:
+          linear-gradient(
+                          rgba(0, 0, 0, 0.6),
+                          rgba(0, 0, 0, 0.6)
+          ),
+          $bg-image no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main-div {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(400%);
+  transform: translateY(400%);
+}

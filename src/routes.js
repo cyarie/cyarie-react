@@ -6,8 +6,8 @@ import HomeComponent from './components/HomeComponent';
 import ResumeContainer from './containers/ResumeContainer';
 
 export default (
-    <Route path="/" component={MainApp}>
+    <Route path="/cyarie-react" component={MainApp}>
         <IndexRoute component={HomeComponent} />
-        <Route path="/resume" component={ResumeContainer} />
+        <Route path="resume" component={ResumeContainer} />
     </Route>
 );

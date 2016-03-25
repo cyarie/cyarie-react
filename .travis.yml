@@ -6,3 +6,15 @@ branches:
     - master
 script:
   - npm run build
+deploy:
+  provider: s3
+  access_key_id: $s3_ access_key_id
+  secret_access_key: $s3_ secret_access_key
+  bucket: labs.cyarie.com
+  endpoint: labs.cyarie.com.s3-website-us-east-1.amazonaws.com
+  region: us-east-1
+  skip_cleanup: true
+  upload_dir: "/cyarie-react"
+  acl: public_read
+  local-dir: dist
+  detect_encoding: true

@@ -14,7 +14,7 @@ deploy:
   endpoint: "labs.cyarie.com.s3-website-us-east-1.amazonaws.com"
   region: us-east-1
   skip_cleanup: true
-  upload_dir: "/cyarie-react"
+  upload_dir: cyarie-react
   acl: public_read
   local-dir: dist
   detect_encoding: true

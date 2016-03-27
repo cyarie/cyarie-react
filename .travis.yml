@@ -4,6 +4,8 @@ node_js:
 branches:
   only:
     - master
+    - development
+    - /^feature\/.*$/
 script:
   - npm run build
 deploy:
@@ -18,3 +20,5 @@ deploy:
   acl: public_read
   local-dir: dist
   detect_encoding: true
+  on:
+    branch: master
